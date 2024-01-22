@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Presentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--! Imagine a timer here! -->
     <div class="controlsLeft">
         <div class="border" id="tab">
-            <figure></figure>
+            <figure>Alt + <br> Tab</figure>
         </div>
     </div>
     <div class="controlsRight">
@@ -24,42 +25,255 @@
     <main>
         <section>
             <div>
-                Intro
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Intro
+                        </h3>
+                        <p>
+                            - Post handin updates!
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Mostly Polishing
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+
+                </div>
             </div>
         </section>
         <section>
             <div>
-                Structure
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Structure
+                        </h3>
+                        <p>
+                            - Micro Service
+                        </p>
+                        <p>
+                            - Admin / API / Client
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+
+                </div>
             </div>
         </section>
         <section>
             <div>
-                Batch files
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Batch files
+                        </h3>
+                        <p>
+                            - Console Commands
+                        </p>
+                        <p>
+                            - Auto run on start up
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+
+                </div>
             </div>
         </section>
         <section>
             <div>
-                Web Sockets
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Web Sockets
+                        </h3>
+                        <p>
+                            - No request/response
+                        </p>
+                        <p>
+                            - Client to Clients Communication
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+
+                </div>
             </div>
         </section>
         <section>
             <div>
-                Images
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Images
+                        </h3>
+                        <p>
+                            - Send
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Convert to Base64
+                        </p>
+                        <p>
+                            - Recieve
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Decode from Base64
+                        </p>
+                        <p>
+                            - Store
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Database
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Save image
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+
+                </div>
             </div>
         </section>
         <section>
             <div>
-                Interfaces
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Interfaces
+                        </h3>
+                        <p>
+                            - Report
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Class or Interface
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+                    <article>
+                        <p class="title comment">
+                            Class:
+                        </p>
+                        <p>
+                            <span class="method">Find cup</span> > <span class="method">Boil water</span> > <span class="method">Grind Beans</span> > <span class="method">Filter water throught grinded beans</span>
+                        </p>
+                        <p class="comment">
+                            Result: <span class="variable">Coffee</span>
+                        </p>
+                    </article>
+                    <article>
+                        <p class="title comment">
+                            Interface:
+                        </p>
+                        <p class="method">
+                            Make coffee
+                        </p>
+                        <p class="comment">
+                            Result: <span class="variable">Coffee</span>
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
         <section>
             <div>
-                Seperation of Concerns
+                <div class="col6">
+                    <article>
+                        <h3>
+                            Seperation of Concerns
+                        </h3>
+                        <p>
+                            - Interface Example
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; - Class:
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; Individual methods
+                        </p>
+                        <p style="margin-top: .7em;">
+                            &nbsp; &nbsp; - Interface:
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; Executrion plan
+                        </p>
+                    </article>
+                </div>
+                <div class="col6">
+                    <article>
+                        <p class="title"><span class="comment">Methods</span>:</p>
+                        <p style="font-weight: bold;">
+                            <span class="method">Find cup</span>, <span class="method">Boil water</span>, <span class="method">Pick flavor</span>, <span class="method">Poor water into cup</span>, <br><span class="method">Put in tea</span>, <span class="method">Grind beans</span>, <span class="method">Filter water through grinded beans</span>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            <span class="variable">Interface</span>: {
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; <span class="title"><span class="method">Make coffee</span> () {</span>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Find cup</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Boil water</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Grind beans</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Filter water through grinded beans</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Poor water into cup</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="comment">return</span> <span class="variable">Coffee</span>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; },
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; <span class="title"><span class="method">Make tea </span><span>(<span class="variable">flavor</span>)</span> {</span>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Find cup</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Boil water</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Pick flavor</span> <span >(<span class="variable">flavor</span>)</span>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Poor water into cup</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="method">Put in tea</span> ()
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; <span class="comment">return</span> <span class="variable">Tea</span>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp; }
+                        </p>
+                        <p>
+                            }
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
         <section>
-            <div>
-                The End
+            <div class="end">
+                <h1>
+                    The End
+                </h1>
             </div>
         </section>
     </main>

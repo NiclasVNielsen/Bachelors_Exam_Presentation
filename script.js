@@ -24,6 +24,7 @@ prev.addEventListener("click", () => {
 })
 
 
+let tabLayout = false
 tab.addEventListener("click", toggleTabLayout)
 
 
@@ -58,6 +59,7 @@ tab.addEventListener("click", toggleTabLayout)
 function toggleTabLayout () {
     main.classList.toggle("selectSlideView")
     tab.classList.toggle("on")
+    tabLayout = !tabLayout
 }
 
 
@@ -95,3 +97,15 @@ const updateButtons = () => {
         prev.classList.remove("disabled")
     }
 }
+
+document.querySelectorAll("main>section>div").forEach((div, index) => {
+    div.addEventListener("click", () => {
+        if(tabLayout){
+            slide = index
+            main.style.marginLeft = `-${slide * 100}vw`
+            checkAndUpdateButtons()
+            
+            toggleTabLayout()
+        }
+    })
+})
