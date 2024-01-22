@@ -56,6 +56,11 @@ tab.addEventListener("click", toggleTabLayout)
 
 /* Utility */
 
+const trailer = document.querySelector("#trailer")
+function startPresentation () {
+    trailer.classList.add("off")
+}
+
 function toggleTabLayout () {
     main.classList.toggle("selectSlideView")
     tab.classList.toggle("on")
