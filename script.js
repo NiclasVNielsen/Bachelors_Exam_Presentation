@@ -53,6 +53,8 @@ function initiatePresentation () {
         return
     started = true
 
+    const presentationBox = document.querySelector(".presentationBox")
+
     const line1 = document.querySelector(".line1")
     let tempDelay = 3000;
     writeLine('<h1 ',line1.querySelector(".s1"),"left",3); 
@@ -160,6 +162,9 @@ function initiatePresentation () {
         setTimeout(() => {
             writeLine(';', line6.querySelector(".s4"),"left",0)
         }, tempDelay);
+        setTimeout(() => {
+            presentationBox.classList.add("xCenter")
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 24
     
@@ -181,6 +186,9 @@ function initiatePresentation () {
         tempDelay += typeSpeed * 6
         setTimeout(() => {
             writeLine(';', line7.querySelector(".s4"),"left",0)
+        }, tempDelay);
+        setTimeout(() => {
+            presentationBox.classList.add("yCenter")
         }, tempDelay);
     }, delay);
     delay += typeSpeed * 20
@@ -225,6 +233,9 @@ function initiatePresentation () {
         setTimeout(() => {
             writeLine(';', line.querySelector(".s4"),"left",0)
         }, tempDelay);
+        setTimeout(() => {
+            presentationBox.classList.add("pbPadding")
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 13
     
@@ -246,6 +257,9 @@ function initiatePresentation () {
         tempDelay += typeSpeed * 3
         setTimeout(() => {
             writeLine(';', line.querySelector(".s4"),"left",0)
+        }, tempDelay);
+        setTimeout(() => {
+            presentationBox.classList.add("pbfontsize")
         }, tempDelay);
     }, delay);
     delay += typeSpeed * 15
@@ -269,6 +283,9 @@ function initiatePresentation () {
         setTimeout(() => {
             writeLine(';', line.querySelector(".s4"),"left",0)
         }, tempDelay);
+        setTimeout(() => {
+            presentationBox.classList.add("pbborder")
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 23
     
@@ -291,6 +308,9 @@ function initiatePresentation () {
         setTimeout(() => {
             writeLine(';', line.querySelector(".s4"),"left",0)
         }, tempDelay);
+        setTimeout(() => {
+            presentationBox.classList.add("pbcolor")
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 12
 
@@ -301,8 +321,6 @@ function initiatePresentation () {
         writeLine('}', document.querySelector(".line14"),"left",0)
     }, delay);
     delay += typeSpeed * 1
-    
-    startCounter()
 }
 //* </Typing
 
@@ -420,6 +438,7 @@ const blinkingEffect = (string, placement, alignment = "left", time) => {
 const trailer = document.querySelector("#trailer")
 function startPresentation () {
     trailer.classList.add("off")
+    startCounter()
 }
 
 function toggleTabLayout () {

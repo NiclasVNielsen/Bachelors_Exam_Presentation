@@ -293,19 +293,40 @@ p
 .presentationBox
     position: absolute
     left: 7.3em
+    transition: 400ms
+    background: #eee
+    cursor: pointer
 
-.presentationBox.on
+.presentationBox.xCenter
     left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
+    transform: translateX(-50%)
+.presentationBox.yCenter
+    margin-top: 100px
+.presentationBox.pbPadding
     padding: 10px
+    >div:nth-of-type(2)
+        padding: 1em
+    >div:first-of-type, >div:last-of-type
+        opacity: 0
+        width: 0
+        height: 0
+        overflow: hidden
+    .line1, .line3
+        display: none
+    .indentLine2
+        display: inline-block
+        width: 0px
+        height: 0px
+        overflow: hidden
+        border-left: transparent !important
+.presentationBox.pbfontsize
+    font-size: 2em
+.presentationBox.pbcolor
+    color: #0aa
+    transition: 100ms
+.presentationBox.pbborder
     border: solid 3px #0aa
     border-radius: 15px
-    font-size: 2em
-    background: #eee
-    transition: 100ms
-    color: #0aa
-    cursor: pointer
     &:hover
         background: #0ff
         border-top: solid 3px #0ff
@@ -318,19 +339,43 @@ p
         border-left: solid 0px #0ff
         border-right: solid 0px #0ff
         border-bottom: solid 0px #0aa
-        margin-top: 3px
+        margin-top: 103px
         color: #fff
-    >div:first-of-type, >div:last-of-type
+
+.presentationBox.on
+    //left: 50%
+    //top: 50%
+    //transform: translate(-50%, -50%)
+    //padding: 10px
+    //border: solid 3px #0aa
+    //border-radius: 15px
+    //font-size: 2em
+    //color: #0aa
+    /* &:hover
+        background: #0ff
+        border-top: solid 3px #0ff
+        border-left: solid 0px #0ff
+        border-right: solid 0px #0ff
+        color: #fff */
+    /* &:active
+        background: #0ff
+        border-top: solid 3px #0ff
+        border-left: solid 0px #0ff
+        border-right: solid 0px #0ff
+        border-bottom: solid 0px #0aa
+        margin-top: 3px
+        color: #fff */
+    /* >div:first-of-type, >div:last-of-type
         opacity: 0
         width: 0
         height: 0
-        overflow: hidden
-    >div:nth-of-type(2)
-        padding: 1em
-    span
+        overflow: hidden */
+    //>div:nth-of-type(2)
+    //    padding: 1em
+    /* span
         display: inline-block
         border-left: none
-        width: 0px
+        width: 0px */
     .indentLine
         border-left: transparent !important
 
