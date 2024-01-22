@@ -96,6 +96,16 @@ img
             background: #222
 
 
+#counter
+    position: fixed
+    top: 5px
+    right: 5px
+    background: #222222
+    color: #eee
+    font-size: 2em
+    padding: 2px 7px
+    border-radius: 10px
+
 main
     width: calc(100vw * 8) /* 100vw * the amount of segments */
     display: flex
@@ -182,6 +192,25 @@ p
 /* --- Trailor --- */
 
 #trailer
+    .blue
+        color: #4B69C9
+    .green
+        color: #448C27
+    .orange
+        color: #C27F27
+    .red
+        color: #AA3731
+    .gray
+        color: #8190A0
+    .purple
+        color: #7A3EA9
+
+    .line1
+        display: flex
+        flex-wrap: wrap
+        span
+            display: block
+
     position: fixed
     top: 0
     left: 0
@@ -259,6 +288,7 @@ p
             .indentLine
                 border-left: 1px solid #D9D9D9
                 margin-left: -1px
+                opacity: 0
 
 .presentationBox
     position: absolute
@@ -303,3 +333,4 @@ p
         width: 0px
     .indentLine
         border-left: transparent !important
+

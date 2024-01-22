@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--! Imagine a timer here! -->
+    <div id="counter">
+        600
+    </div>
     <div class="controlsLeft">
         <div class="border" id="tab">
             <figure>Alt + <br> Tab</figure>
@@ -22,7 +24,7 @@
         </div>
     </div>
 
-    <div id="trailer">
+    <div id="trailer" onclick="initiatePresentation()">
         <div class="navBar">
             <div><img src="./images/nav1.png" alt=""></div>
             <div><img src="./images/nav2.png" alt=""></div>
@@ -43,15 +45,15 @@
                     <div></div>
                 </header>
                 <div class="body">
-                    <div><span class="lineN">&nbsp;1</span>&lt;!DOCTYPE html&gt;</div>
-                    <div><span class="lineN">&nbsp;2</span>&lt;html lang="en"&gt;</div>
-                    <div><span class="lineN">&nbsp;3</span>&lt;head&gt;</div>
-                        <div><span class="lineN">&nbsp;4</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;meta charset="UTF-8"&gt;</div>
-                        <div><span class="lineN">&nbsp;5</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</div>
-                        <div><span class="lineN">&nbsp;6</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;link rel="stylesheet" href="./style.css"&gt;</div>
-                        <div><span class="lineN">&nbsp;7</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;title&gt;Document&lt;/title&gt;</div>
-                    <div><span class="lineN">&nbsp;8</span>&lt;/head&gt;</div>
-                    <div><span class="lineN">&nbsp;9</span>&lt;body&gt;</div>
+                    <div><span class="lineN">&nbsp;1</span><span class="blue">&lt;!DOCTYPE</span> <i class="gray">html</i><span class="blue">&gt;</span></div>
+                    <div><span class="lineN">&nbsp;2</span><span class="blue">&lt;html</span> <i class="gray">lang</i><span class="gray">="</span><span class="green">en</span><span class="gray">"</span><span class="blue">&gt;</span></div>
+                    <div><span class="lineN">&nbsp;3</span><span class="blue">&lt;head&gt;</span></div>
+                        <div><span class="lineN">&nbsp;4</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="blue">&lt;meta</span> <i class="gray">charset</i><span class="gray">="</span><span class="green">UTF-8</span><span class="gray">"</span><span class="blue">&gt;</span></div>
+                        <div><span class="lineN">&nbsp;5</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="blue">&lt;meta</span> <i class="gray">name</i><span class="gray">="</span><span class="green">viewport</span><span class="gray">"</span> <i class="gray">content</i><span class="gray">="</span><span class="green">width=device-width, initial-scale=1.0</span><span class="gray">"</span><span class="blue">&gt;</span></div>
+                        <div><span class="lineN">&nbsp;6</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="blue">&lt;link</span> <i class="gray">rel</i><span class="gray">="</span><span class="green">stylesheet</span><span class="gray">"</span> <i class="gray">href</i><span class="gray">="</span><span class="green">./style.css</span><span class="gray">"</span><span class="blue">&gt;</span></div>
+                        <div><span class="lineN">&nbsp;7</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="blue">&lt;title&gt;</span>Document<span class="blue">&lt;/title&gt;</span></div>
+                    <div><span class="lineN">&nbsp;8</span><span class="blue">&lt;/head&gt;</span></div>
+                    <div><span class="lineN">&nbsp;9</span><span class="blue">&lt;body&gt;</span></div>
                     <div><span class="lineN">10</span></div>
                     <div style="display: flex;">
                         <div>
@@ -59,15 +61,15 @@
                             <div><span class="lineN">12</span></div>
                             <div><span class="lineN">13</span></div>
                         </div>
-                        <div class="presentationBox on" onclick="startPresentation()">
-                            <div>&lt;h1 onclick="startPresentation()"&gt;</div>
-                            <div><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>Start Presentation</div>
-                            <div>&lt;/h1&gt;</div>
+                        <div class="presentationBox" onclick="startPresentation()">
+                            <div class="line1"> <span class="s1 blue"></span>  <i class="s2 gray"></i>  <span class="s3 gray"></span>  <span class="s4 red"></span>  <span class="s5 blue"></span>  <span class="s6 grey"></span>  <span class="s7 blue"></span> <!-- &lt;h1 onclick="startPresentation()"&gt; --></div>
+                            <div><span class="indentLine indentLine2">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line2"></span><!-- Start Presentation --></div>
+                            <div class="line3 blue"><!-- &lt;/h1&gt; --></div>
                         </div>
                     </div>
                     <div><span class="lineN">14</span></div>
-                    <div><span class="lineN">15</span>&lt;/body&gt;</div>
-                    <div><span class="lineN">16</span>&lt;/html&gt;</div>
+                    <div><span class="lineN">15</span><span class="blue">&lt;/body&gt;</span></div>
+                    <div><span class="lineN">16</span><span class="blue">&lt;/html&gt;</span></div>
                     <div><span class="lineN">17</span></div>
                 </div>
             </div>
@@ -82,18 +84,18 @@
                     <div></div>
                 </header>
                 <div class="body">
-                    <div><span class="lineN">&nbsp;1</span>body {</div>
-                    <div><span class="lineN">&nbsp;2</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>display: flex;</div>
-                    <div><span class="lineN">&nbsp;3</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>justify-content: center;</div>
-                    <div><span class="lineN">&nbsp;4</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>align-items: center;</div>
-                    <div><span class="lineN">&nbsp;5</span>}</div>
+                    <div><span class="lineN">&nbsp;1</span><span class="line4"><span class="purple s1"></span><span class="blue s2"></span></span><!-- body { --></div>
+                    <div><span class="lineN">&nbsp;2</span><span class="indentLine indentLine5">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line5"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- display: flex; --></div>
+                    <div><span class="lineN">&nbsp;3</span><span class="indentLine indentLine6">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line6"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- justify-content: center; --></div>
+                    <div><span class="lineN">&nbsp;4</span><span class="indentLine indentLine7">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line7"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- align-items: center; --></div>
+                    <div><span class="lineN">&nbsp;5</span><span class="line8 blue"></span><!-- } --></div>
                     <div><span class="lineN">&nbsp;6</span></div>
-                    <div><span class="lineN">&nbsp;7</span>h1 {</div>
-                    <div><span class="lineN">&nbsp;8</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>padding: 1em;</div>
-                    <div><span class="lineN">&nbsp;9</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>font-size: 2em;</div>
-                    <div><span class="lineN">10</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>border: solid 3px #0AA;</div>
-                    <div><span class="lineN">11</span><span class="indentLine">&nbsp;&nbsp;&nbsp;&nbsp;</span>color: #0AA;</div>
-                    <div><span class="lineN">12</span>}</div>
+                    <div><span class="lineN">&nbsp;7</span><span class="line9"><span class="purple s1"></span><span class="blue s2"></span><!-- h1 { --></div>
+                    <div><span class="lineN">&nbsp;8</span><span class="indentLine indentLine10">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line10"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- padding: 1em; --></div>
+                    <div><span class="lineN">&nbsp;9</span><span class="indentLine indentLine11">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line11"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- font-size: 2em; --></div>
+                    <div><span class="lineN">10</span><span class="indentLine indentLine12">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line12"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- border: solid 3px #0AA; --></div>
+                    <div><span class="lineN">11</span><span class="indentLine indentLine13">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line13"><span class="s1 orange"></span><span class="s2"></span><span class="s3 green"></span><span class="s4"></span></span><!-- color: #0AA; --></div>
+                    <div><span class="lineN">12</span><span class="line14 blue"></span><!-- } --></div>
                     <div><span class="lineN">13</span></div>
                 </div>
             </div>
