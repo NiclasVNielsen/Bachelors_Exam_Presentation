@@ -232,7 +232,21 @@ function initiatePresentation () {
 
 
     setTimeout(() => {
-        writeLine('font-size: 2em;', document.querySelector(".line11"),"left",0)
+        tempDelay = 0;
+        const line = document.querySelector(".line11")
+        writeLine('font-size', line.querySelector(".s1"),"left",0)
+        tempDelay += typeSpeed * 9
+        setTimeout(() => {
+            writeLine(': ', line.querySelector(".s2"),"left",0)
+        }, tempDelay);
+        tempDelay += typeSpeed * 2
+        setTimeout(() => {
+            writeLine('2em', line.querySelector(".s3"),"left",0)
+        }, tempDelay);
+        tempDelay += typeSpeed * 3
+        setTimeout(() => {
+            writeLine(';', line.querySelector(".s4"),"left",0)
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 15
     
@@ -240,7 +254,21 @@ function initiatePresentation () {
 
 
     setTimeout(() => {
-        writeLine('border: solid 3px #0AA;', document.querySelector(".line12"),"left",0)
+        tempDelay = 0;
+        const line = document.querySelector(".line12")
+        writeLine('border', line.querySelector(".s1"),"left",0)
+        tempDelay += typeSpeed * 6
+        setTimeout(() => {
+            writeLine(': ', line.querySelector(".s2"),"left",0)
+        }, tempDelay);
+        tempDelay += typeSpeed * 2
+        setTimeout(() => {
+            writeLine('solid 3px #0AA', line.querySelector(".s3"),"left",0)
+        }, tempDelay);
+        tempDelay += typeSpeed * 14
+        setTimeout(() => {
+            writeLine(';', line.querySelector(".s4"),"left",0)
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 23
     
@@ -248,7 +276,21 @@ function initiatePresentation () {
 
 
     setTimeout(() => {
-        writeLine('color: #0AA;', document.querySelector(".line13"),"left",0)
+        tempDelay = 0;
+        const line = document.querySelector(".line13")
+        writeLine('color', line.querySelector(".s1"),"left",0)
+        tempDelay += typeSpeed * 5
+        setTimeout(() => {
+            writeLine(': ', line.querySelector(".s2"),"left",0)
+        }, tempDelay);
+        tempDelay += typeSpeed * 2
+        setTimeout(() => {
+            writeLine('#0AA', line.querySelector(".s3"),"left",0)
+        }, tempDelay);
+        tempDelay += typeSpeed * 4
+        setTimeout(() => {
+            writeLine(';', line.querySelector(".s4"),"left",0)
+        }, tempDelay);
     }, delay);
     delay += typeSpeed * 12
 
